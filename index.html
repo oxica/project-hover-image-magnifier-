@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image Magnifier </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="magnify.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+    <img src="/images/01.webp" id="image" class="zoom" data-magnify-src="/images/01.webp">
+    <img src="/images/02.webp" id="image" class="zoom" data-magnify-src="/images/02.webp">
+    <img src="/images/03.webp" id="image" class="zoom" data-magnify-src="/images/03.webp">
+
+    <script src="jquery.magnify.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('.zoom').magnify();
+        });
+        </script>
+</body>
+</html>
